@@ -11,7 +11,7 @@ function App() {
     if (change === true) {
       const fetchShiba = async () => {
         await fetch(
-          `http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=false`
+          `https://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true`
         )
           .then((res) => res.json())
           .then((data) => {
